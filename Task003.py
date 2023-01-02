@@ -6,9 +6,14 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-x= int(input('x = '))
-y= int(input('y = '))
 
+
+
+def checkinput(a):
+    if a==0:
+        print('Введите число не равное нулю')
+        a= int(input(': '))
+    return a
 
 def checkCoordinates(x,y):
     text = 4
@@ -20,7 +25,10 @@ def checkCoordinates(x,y):
         text = 3
     print(f"x={x}; y={y} -> {text}")
 
-
+x= int(input('x = '))
+x=checkinput(x)
+y= int(input('y = '))
+y=checkinput(y)
 checkCoordinates(x,y)
 
 
