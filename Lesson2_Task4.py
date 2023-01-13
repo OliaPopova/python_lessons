@@ -15,8 +15,6 @@ def read_file():
         indexs = list(map(int, data.readlines()))
     return indexs
 
-
-# улучшение проргаммы
 n = int(input("Введите число N: "))
 lst_number = [i for i in range(-n, n+1)]
 write_file(n)
@@ -26,3 +24,10 @@ for i in range(len(lst_index)):
     prod *= lst_number[lst_index[i]]
 print(f"Результат равен = {prod}")
 
+# 2
+
+# import random
+# lst = [random.randint(0, 10) for i in range(random.randint(5, 20))]
+# print(f"исходный список:\n {lst}")
+# random.shuffle(lst)
+# print(f"список после перемешивания:\n{lst}")
